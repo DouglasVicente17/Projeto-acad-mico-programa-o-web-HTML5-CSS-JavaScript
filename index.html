@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heavy Metal Style - Loja Oficial de Camisetas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Cbeçalho Principal -->
+        <header class="header-principal">
+            <div class="logo">
+            <h1>🎸 Heavy Metal Style</h1>
+        </div>
+
+        <!-- menu de navegação -->
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#produtos">Camisetas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção de apresentação do banner -->
+        <section id="início" class="hero-banner">
+            <h2>As melhores camisetas de Rock em um só lugar</h2>
+            <p>Estampa em alta qualidade 100% algodão para os verdadeiros fãs do Heavy Metal</p>
+        </section>
+    
+        <!-- Seção de Produtos -->
+        <section id="produtos" class="secao-produtos">
+            <h2>Camisetas em Destaque</h2>
+
+            <div class="grade-produtos">
+
+                <!-- prosuto 1 -->
+                <article class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1629253032541-75d722c73e55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="preta de banda de rock clássico com estampa estilizada">
+                    <h3>Camiseta Classic Rock</h3>
+                    <p class="descricao">Camiseta preta de algodão penteado com estampa estilo vintage.</p>
+                    <span class="preco">R$ 89,90</span>
+                    <button class="btn-comprar">Comprar agora</button>
+                </article>
+
+                <!--Produto 2 -->
+                <article class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1687427198813-954885e4ca04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Camiseta estilo heavy metal">
+                    <h3>Camiseta The Billy Bones</h3>
+                    <p class="descricao">Design exclusivo.</p>
+                    <span class="preco">R$ 89,90</span>
+                    <button class="btn-comprar">Comprar Agora</button>
+                </article>
+
+                <!--Produto 3 -->
+                <article class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1604520164966-8ca929961ebe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Camiseta preta moderna com as melhores estamaps de rock">
+                    <h3>Camiseta Metallica</h3>
+                    <p class="descricao">Edição especial inspirada nas grandes bandas de Heavy Metal</p>
+                    <span class="preco">R$ 90,90</span>
+                    <button class="btn-comprar ">Comprar Agora</button>
+                  </article>
+
+            </div>
+        </section>
+    </main>
+    
+    <!-- Seção dinâmica com API pública -->
+    <section class="secao-api" style="padding: 40px 20px; text-align: center; background-color: inherit;">
+        <h2>Dica do dia para fãs de Rock</h2>
+        <div id="conselho-api" style="max-width: 600px; margin: 20px auto; padding: 20px; border: 2px dashed #e74c3c; border-radius: 8px; font-size: 1.1rem; font-weight: bold;">
+        A carregar conselho de Rock... 🎸
+        </div>
+        <button id="btn-atualizar-api" style="padding: 10px 20px; background-color: #e74c3c; color: #ffffff; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Gerar nova dica</button>
+    </section>
+    
+        <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2026 Heavy Metal Style. Todos os direitos reservados.</p>
+        <p>Contato: suporte@heavymetalstyle.com.br</p>
+    </footer>
+
+    </body>
+    <!-- Aqui entra a linha que liga o HTML ao JavaScript -->
+    <script src="./script.js"></script>
+</html>

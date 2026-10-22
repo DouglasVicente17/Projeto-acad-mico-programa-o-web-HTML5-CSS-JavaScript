@@ -1,0 +1,227 @@
+/*Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header-principal {
+    background-color: #1e1e1e;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #e74c3c;
+}
+
+.logo h1 {
+    color: #e74c3c;
+    font-size: 1.5rem;
+}
+
+.menu-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-nav a:hover {
+    color: #e74c3c;
+}
+
+/*Banner principal */
+.hero-banner {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.hero-banner h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.hero-banner p {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+}
+
+/* Seção de produtos */
+.secao-produtos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.secao-produtos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #f1f1f1;
+}
+
+/* Grade responsiva de produtos */
+.grade-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Card do produto */
+.card-produto {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+}
+
+.card-produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-produto h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card-produto .descricao {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-bottom: 15px;
+}
+
+.card-produto .preco {
+    font-size:  1.4rem;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.btn-comprar {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.btn-comprar:hover {
+    background-color: #c0392b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 1px solid #222;
+    color: #777; 
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    .header-principal {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .grade-produtos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Estilo para o modo claro ativado pelo JavaScript */
+body.modo-claro {
+    background-color: #f4f4f4 !important;
+    color: #111111 !important;
+  }
+  
+  body.modo-claro .header-principal {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #e74c3c !important;
+  }
+  
+  body.modo-claro .logo h1 {
+    color: #e74c3c !important;
+  }
+  
+  body.modo-claro .menu-nav a {
+    color: #333333 !important;
+  }
+  
+  body.modo-claro .menu-nav a:hover {
+    color: #e74c3c !important;
+  }
+  
+  body.modo-claro .card-produto {
+    background-color: #ffffff !important;
+    border: 1px solid #ddd !important;
+  }
+  
+  body.modo-claro h2, 
+  body.modo-claro h3, 
+  body.modo-claro p {
+    color: #222222 !important;
+  }
+
+
+/* Forçar o modo claro no Banner/Hero e nas secções principais */
+body.modo-claro section,
+body.modo-claro .hero,
+body.modo-claro .banner,
+body.modo-claro main {
+  background-color: #f4f4f4 !important;
+  color: #111111 !important;
+}
+
+/* Forçar a cor escura nos títulos e textos do banner */
+body.modo-claro section h2,
+body.modo-claro section p,
+body.modo-claro .hero h2,
+body.modo-claro .hero p {
+  color: #111111 !important;
+}
+
+/* Ajusta também o carrinho criado no cabeçalho */
+body.modo-claro .header-principal div {
+  color: #111111 !important;
+}
